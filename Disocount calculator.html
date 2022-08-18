@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-amber-100	">
+    <div class="bg-pink-400 w-1/2 mx-auto mt-12">
+        <h1 class="text-5xl text-center font-semibold mt-8 text-green-700	"> Bill Calculator </h1>
+        <div class="pl-14">
+            <div class="flex   mx-22 px-6">
+                <div class="  mt-5 px-2">
+                    <p class="mb-3 mt-2"> <span class="font-bold	">Your Bill($) </span> </p>
+                    <p class="mb-3"> <span class="font-bold	">Discount Amount(%) </span></p>
+                    <p class="mb-3"> <span class="font-bold	">Coupon (if you have) </span> </p>
+                </div>
+                <div>
+                    <input class="mx-10 rounded w-6/12 p-2 mt-5 mb-3" type="text" name="" id="input-bill"
+                        placeholder="Enter Total Amount">
+                    <input class="mx-10 rounded w-6/12 p-2 mb-4" type="text" name="" id="input-discount"
+                        placeholder="Enter Discount Amount">
+                    <input class="mx-10 rounded w-6/12 p-2 mb-3" type="text" name="" id="input-coupon"
+                        placeholder="Please Promo Code">
+                </div>
+            </div>
+            <button id="btn-discount"
+                class="bg-orange-700 rounded px-6 font-bold text-white mb-5 py-2 mx-56 hover:bg-cyan-400">Discount</button>
+        </div>
+    </div>
+    <div class="bg-sky-400 w-1/2 mx-auto mt-12 mb-12 p-2">
+        <h1 class="text-5xl text-center font-semibold"> Bill Receipt </h1>
+        <div class="flex   mx-22 px-6 mt-5">
+
+            <div class="  mt-5 px-2">
+                <p class="mb-3 mt-2"> <span class="font-bold	">Your Bill($)(with Disc.) </span>
+                </p>
+                <p class="mb-2 mt-22"> <span class="font-bold	">Discount Amount </span></p>
+
+            </div>
+            <div>
+                <br>
+                <p class="font-bold px-6 mb-4">= <span id="total-bill">00</span> Taka</p>
+                <p class="font-bold px-6 mb-4">= <span id="get-discount">00</span> Taka</p><br><br>
+                <p class="text-2xl mb-3">Thanks..see you again</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script/discount.js"></script>
+</body>
+
+</html>
